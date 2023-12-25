@@ -2,12 +2,10 @@
 
 
 
+let filterButtons = document.querySelectorAll(".filter_buttons button")
+let filterableCards = document.querySelectorAll(".filterable_cards a")
 
-
-
-
-const filterButtons = document.querySelectorAll(".filter_buttons button")
-const filterableCards = document.querySelectorAll(".filterable_cards a")
+let a = document.querySelector("a")
 
 const filterCards = (e) => {
     document.querySelector(".active").classList.remove("active")
@@ -21,9 +19,7 @@ const filterCards = (e) => {
         }
     })
 }
-
-filterButtons.forEach(button => button.addEventListener("click", filterCards));
-
+filterButtons.forEach(button => button.addEventListener("click", filterCards))
 
 function openside() {
     let element = document.querySelector(".left-btns");
@@ -35,8 +31,25 @@ function openside() {
 
 
 
+function searchFunction() {
+    const input = document.querySelector("input").value.toUpperCase();
+
+    const cardcontainer = document.querySelector(".row");
+    console.log(cardcontainer)
+
+    const cards = cardcontainer.querySelectorAll(".cards-content");
+    console.log(cards)
 
 
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".content-card .card_text")
+        console.log(title)
 
+        if (title.innerText.toUpperCase().indexOf(input) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
 
-
+}

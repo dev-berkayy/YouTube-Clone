@@ -19,7 +19,7 @@
         <div class="left-nav">
 
             <button id="sidebtn" onclick="openside()"><i class="fa-solid fa-bars bars"></i></button>
-            <a href="" id="logo"><i class="fa-brands fa-youtube"></i> <span
+            <a href="index.html" id="logo"><i class="fa-brands fa-youtube"></i> <span
                     style="color: black; font-weight: bold; letter-spacing: -2px; word-spacing: -4px; margin-top: 4px; font-size: 24px;">You
                     Tube </span> <span style="color: black; font-size: 11px; font-weight: 600;">TR</span></a>
 
@@ -28,8 +28,8 @@
 
 
         <div class="mid-nav">
-            <input class="input" type="text" placeholder="SEARCH">
-            <button id="search"> <i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="SEARCH" onkeyup="searchFunction()">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i> </button>
             <button id="mic"><i class="fa-solid fa-microphone"></i></button>
         </div>
 
@@ -44,16 +44,25 @@
 
     <div class="main">
         <div class="left-btns">
-            <button id="left-btn"><i class="fa-solid fa-house"></i> HOME </button>
-            <button id="left-btn"><i class="fa-brands fa-openid"></i> SHORTS </button>
-            <button id="left-btn"> <i class="fa-regular fa-star"></i>SUBSCRİBE</button>
-            <button id="left-btn"> <i class="fa-solid fa-pager"></i> YOU </button>
+            <button><i class="fa-solid fa-house"></i> HOME </button>
+            <button><i class="fa-brands fa-openid"></i> SHORTS </button>
+            <button><i class="fa-regular fa-star"></i>SUBSCRİBE</button>
+            <button><i class="fa-solid fa-pager"></i> YOU </button>
+
 
             <div class="left-btns2">
-                <button> <img id="card-img" src="0.jpg" alt="">YOU-LUBE</button>
-                <button> <img id="card-img" src="0.jpg" alt="">YOU-LUBE</button>
-                <button> <img id="card-img" src="0.jpg" alt="">YOU-LUBE</button>
-                <button> <img id="card-img" src="0.jpg" alt="">YOU-LUBE</button>
+                <h3>YOU <i class="fa-solid fa-arrow-right arr"></i></h3>
+                <a class="left-btns2-content" href=""> <i class="fa-regular fa-user emoji"></i> <span
+                        style="color: black;">YOU LUBE</span> </a>
+                <a class="left-btns2-content" href=""><i class="fa-solid fa-arrow-rotate-left emoji"></i><span
+                        style="color: black;">YOU LUBE</span></i></a>
+                <a class="left-btns2-content" href=""><i class="fa-solid fa-play emoji"></i> <span
+                        style="color: black;">YOU
+                        LUBE</span> </a>
+                <a class="left-btns2-content" href=""> <i class="fa-solid fa-clock-rotate-left emoji"></i> <span
+                        style="color: black;">YOU LUBE</span> </a>
+                <a class="left-btns2-content" href=""><i class="fa-regular fa-thumbs-up emoji"></i> <span
+                        style="color: black;">YOU LUBE</span> </i></a>
             </div>
 
         </div>
@@ -64,19 +73,22 @@
         <div class="container">
             <div class="filter_buttons">
                 <button class="active" data-name="all"> ALL</button>
-                <button data-name="gym">GYM</button>
+                <button data-name="foods">FOODS</button>
+                <button data-name="animal">ANİMALS</button>
                 <button data-name="cars">CARS</button>
-                <button data-name="game" id="project-button">MY PROJECT</button>
-                <button data-name="game">GAMES</button>
-                <button data-name="game">MUSİC</button>
+                <button data-name="PROJECT" id="project-button">NOT WORKİNG</button>
+                <button data-name="gym">GYM</button>
+                <button data-name="gym">BİRDS</button>
+
 
             </div>
 
 
             <div class="filterable_cards">
-                <a href="" data-name="gym">
-                    <div class="card">
-                        <img src="gym1.jpg" alt="">
+                <div class="row">
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym1.mp4"></video>
                         <div class="card_body">
                             <img id="card-img" src="0.jpg" alt="">
                             <div class="content-card">
@@ -91,12 +103,33 @@
                             </div>
 
                         </div>
-                    </div>
-                </a>
 
-                <a href="" data-name="gym">
-                    <div class="card">
-                        <img src="gym2.jpg" alt="">
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+                                <p class="card_text">
+                                    IF you Go to the Gym You can Feel better
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym3.mp4"></video>
                         <div class="card_body">
                             <img id="card-img" src="0.jpg" alt="">
                             <div class="content-card">
@@ -112,34 +145,12 @@
                             </div>
 
                         </div>
-                    </div>
-                </a>
 
+                    </a>
 
-                <a href="" data-name="gym">
-                    <div class="card">
-                        <img src="gym3.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
+                    <a class="cards-content" href="" data-name="gym">
 
-                                <p class="card_text">
-                                    IF you Go to the Gym You can Feel better
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" data-name="game">
-                    <div class="card">
-                        <img src="game 1.jpg" alt="">
+                        <video src="gym4.mp4"></video>
                         <div class="card_body">
                             <img id="card-img" src="0.jpg" alt="">
                             <div class="content-card">
@@ -155,128 +166,18 @@
                             </div>
 
                         </div>
-                    </div>
-                </a>
 
-                <a href="" data-name="game">
-                    <div class="card">
-                        <img src="game2.jpg" alt="">
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym5.mp4"></video>
                         <div class="card_body">
                             <img id="card-img" src="0.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    Dying Light 2
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" data-name="game">
-                    <div class="card">
-                        <img src="game4.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Counter Strike Global Offensive
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" data-name="game">
-                    <div class="card">
-                        <img src="game5.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    God Of War
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-
-
-                <a href="" data-name="cars">
-                    <div class="card">
-                        <img src="araba1.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    BMW 320 M Sport
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" data-name="cars">
-                    <div class="card"">
-                        <img src=" araba2.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Bmw 420 İ
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-
-
-
-                <a href="" data-name="cars">
-                    <div class="card" data-name="cars">
-
-                        <img src="araba4.jpg" alt="">
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    MERCEDES BENZ C63 AMG V8 SUPERNATURAL ENGİNE !
+                                    Call OF Duty Warzone
                                 </p>
 
                                 <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
@@ -287,17 +188,576 @@
 
                         </div>
 
+                    </a>
 
-                    </div>
-                </a>
+                    <a class="cards-content" href="" data-name="gym">
 
+                        <video src="gym6.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Call OF Duty Warzone
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym7.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Call OF Duty Warzone
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym8.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Call OF Duty Warzone
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym9.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Call OF Duty Warzone
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="gym10.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Call OF Duty Warzone
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal1.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal5.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="animal6.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car1.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car5.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="car6.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food1.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food5.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food6.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food7.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food8.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food9.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="food10.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="0.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ANİMAl
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
 
 
             </div>
 
-
         </div>
-
     </div>
 
     </div>
