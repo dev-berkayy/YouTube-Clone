@@ -1,7 +1,6 @@
 
 
 
-
 let filterButtons = document.querySelectorAll(".filter_buttons button")
 let filterableCards = document.querySelectorAll(".filterable_cards a")
 
@@ -21,13 +20,20 @@ const filterCards = (e) => {
 }
 filterButtons.forEach(button => button.addEventListener("click", filterCards))
 
+
 function openside() {
     let element = document.querySelector(".left-btns");
     let btn = document.querySelector(".left-btns2");
+    let btn2 = document.querySelector(".left-btns3")
+    btn2.classList.toggle("activex4")
     btn.classList.toggle("activex3")
     element.classList.toggle("activex")
-}
+    let element2 = document.querySelectorAll(".left-btn")
+    element2.forEach((e) => {
+        e.classList.toggle("left-btn-new")
 
+    })
+}
 
 
 
@@ -35,10 +41,10 @@ function searchFunction() {
     const input = document.querySelector("input").value.toUpperCase();
 
     const cardcontainer = document.querySelector(".row");
-    console.log(cardcontainer)
+
 
     const cards = cardcontainer.querySelectorAll(".cards-content");
-    console.log(cards)
+
 
 
     for (let i = 0; i < cards.length; i++) {

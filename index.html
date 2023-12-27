@@ -16,27 +16,42 @@
 
     <div class="nav">
 
+
         <div class="left-nav">
 
-            <button id="sidebtn" onclick="openside()"><i class="fa-solid fa-bars bars"></i></button>
-            <a href="index.html" id="logo"><i class="fa-brands fa-youtube"></i> <span
-                    style="color: black; font-weight: bold; letter-spacing: -2px; word-spacing: -4px; margin-top: 4px; font-size: 24px;">You
-                    Tube </span> <span style="color: black; font-size: 11px; font-weight: 600;">TR</span></a>
+            <div class="nav-content">
+                <button id="sidebtn" onclick="openside()"><i class="fa-solid fa-bars bars"></i></button>
+                <a href="index.html" id="logo"><i class="fa-brands fa-youtube"></i> <span
+                        style="color: black; font-weight: bold; letter-spacing: -2px; word-spacing: -4px; margin-top: 4px; font-size: 24px;">You
+                        Tube </span> <span style="color: black; font-size: 11px; font-weight: 600;">TR</span></a>
+            </div>
 
+            <div class="mid-nav">
+                <input type="text" placeholder="SEARCH" onkeyup="searchFunction()">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                <button id="mic"><i class="fa-solid fa-microphone"></i></button>
+            </div>
+
+            <div class="rigth-nav">
+                <a href="#"><i class="fa-regular fa-bell bell"></i></a>
+                <a href="#"><i class="fa-solid fa-gift gift"></i></a>
+                <a href="#"></a>
+            </div>
 
         </div>
 
 
-        <div class="mid-nav">
-            <input type="text" placeholder="SEARCH" onkeyup="searchFunction()">
-            <button id="search"><i class="fa-solid fa-magnifying-glass"></i> </button>
-            <button id="mic"><i class="fa-solid fa-microphone"></i></button>
-        </div>
 
-        <div class="rigth-nav">
-            <a href="#"><i class="fa-regular fa-bell bell"></i></a>
-            <a href="#"><i class="fa-solid fa-gift gift"></i></a>
-            <a href="#"></a>
+        <div class="filter_buttons">
+            <button class="active" data-name="all"> ALL</button>
+            <button data-name="foods">FOODS</button>
+            <button data-name="animal">ANİMALS</button>
+            <button data-name="cars">CARS</button>
+            <button data-name="gym">GYM</button>
+            <button data-name="gym">BİRDS</button>
+            <button data-name="PROJECT" id="project-button">NOT WORKİNG</button>
+
+
         </div>
 
     </div>
@@ -44,228 +59,119 @@
 
     <div class="main">
         <div class="left-btns">
-            <button><i class="fa-solid fa-house"></i> HOME </button>
-            <button><i class="fa-brands fa-openid"></i> SHORTS </button>
-            <button><i class="fa-regular fa-star"></i>SUBSCRİBE</button>
-            <button><i class="fa-solid fa-pager"></i> YOU </button>
+            <div id="kapsayici-left-btn">
+                <button class="left-btn"><i class="fa-solid fa-house"></i> HOME </button>
+                <button class="left-btn"><i class="fa-brands fa-openid"></i> HOME</button>
+                <button class="left-btn"><i class="fa-regular fa-star"></i> HOME</button>
+                <button class="left-btn"><i class="fa-solid fa-pager"></i> HOME</button>
+            </div>
 
 
             <div class="left-btns2">
                 <h3>YOU <i class="fa-solid fa-arrow-right arr"></i></h3>
                 <a class="left-btns2-content" href=""> <i class="fa-regular fa-user emoji"></i> <span
-                        style="color: black;">YOU LUBE</span> </a>
+                        style="color: black;">Personal</span> </a>
                 <a class="left-btns2-content" href=""><i class="fa-solid fa-arrow-rotate-left emoji"></i><span
-                        style="color: black;">YOU LUBE</span></i></a>
+                        style="color: black;">Past</span></i></a>
                 <a class="left-btns2-content" href=""><i class="fa-solid fa-play emoji"></i> <span
-                        style="color: black;">YOU
-                        LUBE</span> </a>
+                        style="color: black;">Videos
+                    </span> </a>
                 <a class="left-btns2-content" href=""> <i class="fa-solid fa-clock-rotate-left emoji"></i> <span
-                        style="color: black;">YOU LUBE</span> </a>
+                        style="color: black;">Watch Later</span> </a>
                 <a class="left-btns2-content" href=""><i class="fa-regular fa-thumbs-up emoji"></i> <span
-                        style="color: black;">YOU LUBE</span> </i></a>
+                        style="color: black;">Liked Videos
+                    </span> </i></a>
             </div>
+
+
+            <div class="left-btns3">
+                <h3 style="margin-top: -20px; margin-left: 45px; color: #353535;">SUBSCRİBE</h3>
+
+                <a class="left-btn3" href=""> <img src="images/gym/gymimg.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">WWE <span
+                            style="margin-left: 85px; color: rgb(233, 0, 0);"><i style="font-size: 15px;"
+                                class="fa-regular fa-star"></i></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg1.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">DutchMotors <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 34px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/animals/animalsimg4.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">Lions <span><span style=" color: rgb(255, 0, 0);"><i
+                                    style="font-size: 15px; padding-left: 82px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg4.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">lamborghini <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 40px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg2.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">TİTAN X<span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 69px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+
+                <a class="left-btn3" href=""> <img src="images/foods/foodimg2.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">Beverages TV<span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 31px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg6.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">V8 ENGİNE <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 45px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+
+                <div class="premium">
+                    <h3 style="margin-top: -20px; margin-left: 45px; color: #353535;"></h3>
+                    <!-- <div>
+                        <a href="" class="premium-a"><i class="fa-brands fa-youtube tub"></i>SETTİNG</a>
+                    </div> -->
+
+                    <a href="" class="premium-a"><i class="fa-brands fa-youtube tub"></i>PREMİUM</a>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
 
         </div>
 
 
 
 
+
+
+
         <div class="container">
-            <div class="filter_buttons">
-                <button class="active" data-name="all"> ALL</button>
-                <button data-name="foods">FOODS</button>
-                <button data-name="animal">ANİMALS</button>
-                <button data-name="cars">CARS</button>
-                <button data-name="PROJECT" id="project-button">NOT WORKİNG</button>
-                <button data-name="gym">GYM</button>
-                <button data-name="gym">BİRDS</button>
 
-
-            </div>
 
 
             <div class="filterable_cards">
                 <div class="row">
                     <a class="cards-content" href="" data-name="gym">
 
-                        <video src="gym1.mp4"></video>
+                        <video src="images/gym/gym1.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/gym/gymimg2.jpg" alt="">
                             <div class="content-card">
                                 <p class="card_text">
-                                    IF you Go to the Gym You can Feel better
+                                    POV: working out at the gym as a girl 💪🏻🏋️‍♀️... #shorts #gym
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym2.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-                                <p class="card_text">
-                                    IF you Go to the Gym You can Feel better
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym3.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    IF you Go to the Gym You can Feel better
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym4.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym5.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym6.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym7.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym8.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="gym">
-
-                        <video src="gym9.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    Call OF Duty Warzone
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2">Yoga Time <br> <span style="margin-top: 6px;">
+                                        1.2,Mn watch ' 5 month ago
                                     </span> </p>
 
                             </div>
@@ -278,17 +184,344 @@
 
                     <a class="cards-content" href="" data-name="gym">
 
-                        <video src="gym10.mp4"></video>
+                        <video src="images/gym/gym4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg4.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    😍 Cute girl Attitude motivational video #shorts #gym #gymmotivation
+                                </p>
+
+                                <p class="card-text2"> Cute girl <br> <span style="margin-top: 6px;">
+                                        2.5,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym6.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg6.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Gym Promo video/Gym commercial/Cinematic fitness film/Gym Motivation/Fitness
+                                </p>
+
+                                <p class="card-text2">Gym PRO <br> <span style="margin-top: 6px;">
+                                        5,Mn watch ' 5 Year Ago
+                                    </span> </p>
+
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="images/foods/food3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/foods/foodimg3.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    🍺🧃 Beverage Names: Vocabulary Guide for Beginners #beverages #drinks #english
+                                    #englishstream #esl
+
+                                </p>
+
+                                <p class="card-text2"> Beverages TV <br> <span style="margin-top: 6px;">
+                                        2,Mn watch ' 10 Year ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="images/foods/food7.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/foods/foodimg7.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    HERKES MUTLAKA DENEMELİ 🔥 EFSANE SÜTLÜ BİBER KAVURMASI ✅
+                                </p>
+
+                                <p class="card-text2"> ✅ BİBERİO LOKVE <br>
+                                    <span style="margin-top: 6px;">
+                                        1.5,Mn watch ' 4 Year ago
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym7.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg5.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    GYM Dress yoga legs beginners exercise
+                                </p>
+
+                                <p class="card-text2">Yoga girl <br> <span style="margin-top: 6px;">
+                                        2,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym9.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg8.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    GYM How To Shoot a FITNESS VIDEO - Lighting & B-ROLL - Cinematic Breakdown
+                                </p>
+
+                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                        9,Mn watch ' 2 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym8.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg9.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    GYM Lighting & B-ROLL - Cinematic Breakdown
+                                </p>
+
+                                <p class="card-text2">SHOT GYM<br> <span style="margin-top: 6px;">
+                                        10,Mn watch ' 2 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="images/animals/animal1.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/animals/animalsimg1.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    🔴24/7 Cat TV for Cats to Watch 😺 Little Birds and Red Squirrels in Winter
+                                </p>
+
+                                <p class="card-text2">Birds TV <br> <span style="margin-top: 6px;">
+                                        13,Mn watch ' 10 Year ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="images/cars/car2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/cars/carimg2.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    1100 HP İNSANE CAR GT 53
+                                    ENGİNE V8
+                                </p>
+
+                                <p class="card-text2"> SS SPORT <br> <span style="margin-top: 6px;">
+                                        1.1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg2.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    deadlift 🥵 210 kg body 62kg never give up 💯 #gym #motivation #video #viral
+                                </p>
+
+                                <p class="card-text2"> 500KG GYM <br> <span style="margin-top: 6px;">
+                                        3,Mn watch ' 8 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym10.mp4"></video>
                         <div class="card_body">
                             <img id="card-img" src="0.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    Call OF Duty Warzone
+                                    DON'T EVER FORGET WHAT THEY DID TO YOU - GYM MOTIVATION 😡
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                <p class="card-text2"> MOTİVATİON <br> <span style="margin-top: 6px;">
                                         1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym5.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg.jpg" alt="">
+                            <div class="content-card">
+                                <p class="card_text">
+                                    A DAY IN MY LIFE | Gym, Work, Eating
+                                </p>
+
+                                <p class="card-text2">AS A MAN <br> <span style="margin-top: 6px;">
+                                        300 000,T watch ' 1 Year Ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="images/animals/animal2.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/animals/animalsimg2.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Birds Of The World 4K - Scenic Wildlife Film With Calming Music
+                                </p>
+
+                                <p class="card-text2"> LİVE animal <br> <span style="margin-top: 6px;">
+                                        3.2,Mn watch ' 6 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="images/animals/animal3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/animals/animalsimg3.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    FUNNIEST Parrots 🤣 Best Compilation
+                                </p>
+
+                                <p class="card-text2"> FUN ANİMAl <br> <span style="margin-top: 6px;">
+                                        1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="images/foods/food14.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/foods/foodimg11.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    ndian🇮🇳 Grandpa👴Emoji Eating 🧋🧃🥤🧋🧃🧋Fruit Juice Emoji #ORANGE-JUCİE
+                                </p>
+
+                                <p class="card-text2">ORANGE JUCİE <br> <span style="margin-top: 6px;">
+                                        15.7,Mn watch ' 12 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="animal">
+
+                        <video src="images/animals/animal4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/animals/animalsimg4.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    The FUNNIEST pandaa BEST VİDEO 🤣 Best Compilation
+                                </p>
+
+                                <p class="card-text2">Panda TV <br> <span style="margin-top: 6px;">
+                                        5,Mn watch ' 11 month ago
                                     </span> </p>
 
                             </div>
@@ -299,76 +532,16 @@
 
                     <a class="cards-content" href="" data-name="animal">
 
-                        <video src="animal1.mp4"></video>
+                        <video src="images/animals/animal5.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/animals/animalsimg5.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    LAKE ON THE GEEKS
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="animal">
-
-                        <video src="animal2.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="animal">
-
-                        <video src="animal3.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="animal">
-
-                        <video src="animal4.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                <p class="card-text2">GEKKS LİVE <br> <span style="margin-top: 6px;">
                                         1,Mn watch ' 5 month ago
                                     </span> </p>
 
@@ -378,19 +551,21 @@
 
                     </a>
 
+
+
                     <a class="cards-content" href="" data-name="animal">
 
-                        <video src="animal5.mp4"></video>
+                        <video src="images/animals/animal6.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/animals/animalsimg4.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    BUTTERFLY İNSANE FLYİNG THE EARTH LİVE
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2">BUTTERFLY TV <br> <span style="margin-top: 6px;">
+                                        2.5,Mn watch ' 2 month ago
                                     </span> </p>
 
                             </div>
@@ -399,18 +574,61 @@
 
                     </a>
 
-                    <a class="cards-content" href="" data-name="animal">
+                    <a class="cards-content" href="" data-name="cars">
 
-                        <video src="animal6.mp4"></video>
+                        <video src="images/cars/car1.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/cars/carimg1.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    Supercars Accelerating - Chiron, Novitec F12 TDF, 800HP TT RS, G-Power M8, iPE
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                <p class="card-text2">ENGİNE TV <br> <span style="margin-top: 6px;">
+                                        7.7,Mn watch ' 1 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="images/cars/car3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/cars/carimg3.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    V8 EXUSTUOSS 800HP Monster Car SURRENDOR
+                                </p>
+
+                                <p class="card-text2">EXOUST CAR <br> <span style="margin-top: 6px;">
+                                        8,Mn watch ' 10 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="cars">
+
+                        <video src="images/cars/car4.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/cars/carimg5.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    Only a Girl Drives a LADA NİVA 🔥 #luxury #billionaire
+                                </p>
+
+                                <p class="card-text2">BLİLLONAİRE TV <br> <span style="margin-top: 6px;">
                                         1,Mn watch ' 5 month ago
                                     </span> </p>
 
@@ -422,37 +640,17 @@
 
                     <a class="cards-content" href="" data-name="cars">
 
-                        <video src="car1.mp4"></video>
+                        <video src="images/cars/car5.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/cars/carimg5.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    [OFF ROAD] - Patrol M57 TwinTurbo | Vf. OMU | #topoffroadromania
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="cars">
-
-                        <video src="car2.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2">CAR TV <br> <span style="margin-top: 6px;">
+                                        2,Mn watch ' 5 month ago
                                     </span> </p>
 
                             </div>
@@ -463,79 +661,16 @@
 
                     <a class="cards-content" href="" data-name="cars">
 
-                        <video src="car3.mp4"></video>
+                        <video src="images/cars/car6.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/cars/carimg6.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    Race 1 – 2023 Lamborghini Super Trofeo Cup At Watkins Glen International
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="cars">
-
-                        <video src="car4.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="cars">
-
-                        <video src="car5.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="cars">
-
-                        <video src="car6.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                <p class="card-text2"> LOVE CAR SUPER ENGİNE <br> <span style="margin-top: 6px;">
                                         1,Mn watch ' 5 month ago
                                     </span> </p>
 
@@ -547,17 +682,17 @@
 
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food1.mp4"></video>
+                        <video src="images/foods/food1.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg2.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    EXOTIC Vietnamese food tour! SUPER RARE street food of Hanoi Vietnam
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2">FOod laugth <br> <span style="margin-top: 6px;">
+                                        3,Mn watch ' 1 month ago
                                     </span> </p>
 
                             </div>
@@ -567,17 +702,17 @@
                     </a>
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food2.mp4"></video>
+                        <video src="images/foods/food2.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg4.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    TOP 10 MOST EXOTIC FOOD ALL OVER THE WORLD #shorts #top10
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2"> DELİCOUS TV <br> <span style="margin-top: 6px;">
+                                        2,Mn watch ' 4 month ago
                                     </span> </p>
 
                             </div>
@@ -587,100 +722,19 @@
                     </a>
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food3.mp4"></video>
+                        <video src="images/foods/food3.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg3.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    🍺🧃 Beverage Names: Vocabulary Guide for Beginners #beverages #drinks #english
+                                    #englishstream #esl
+
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                    <a class="cards-content" href="" data-name="foods">
-
-                        <video src="food4.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-
-                    <a class="cards-content" href="" data-name="foods">
-
-                        <video src="food5.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="foods">
-
-                        <video src="food6.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
-                                    </span> </p>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a class="cards-content" href="" data-name="foods">
-
-                        <video src="food7.mp4"></video>
-                        <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
-                            <div class="content-card">
-
-                                <p class="card_text">
-                                    ANİMAl
-                                </p>
-
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2"> Beverages TV <br> <span style="margin-top: 6px;">
+                                        2,Mn watch ' 10 Year ago
                                     </span> </p>
 
                             </div>
@@ -691,17 +745,82 @@
 
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food8.mp4"></video>
+                        <video src="images/foods/food4.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg4.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    Best🔥 Ice Cream Bars ASMR !?🔥 Snickers, Bounty, Mars!🔥
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2"> İCE CREAM GİRL <br> <span style="margin-top: 6px;">
+                                        5,Mn watch ' 8 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="images/foods/food5.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/foods/foodimg5.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    TOMETOSS VERY HOT !!!
+                                </p>
+
+                                <p class="card-text2">TOMETOO TV <br> <span style="margin-top: 6px;">
+                                        2.9,Mn watch ' 7 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a class="cards-content" href="" data-name="foods">
+
+                        <video src="images/foods/food8.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/foods/foodimg6.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    DRINK IT! 6 BEST Natural Drinks for your Kidney Health | PureNutrition
+                                </p>
+
+                                <p class="card-text2"> TEA Beverages<br> <span style="margin-top: 6px;">
+                                        2.5,Mn watch ' 4 Year ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym8.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg9.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    GYM Lighting & B-ROLL - Cinematic Breakdown
+                                </p>
+
+                                <p class="card-text2">SHOT GYM<br> <span style="margin-top: 6px;">
+                                        10,Mn watch ' 2 month ago
                                     </span> </p>
 
                             </div>
@@ -712,17 +831,39 @@
 
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food9.mp4"></video>
+                        <video src="images/foods/food9.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg8.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    Sevimli Çilek Çizimi 🍓 Kolay Çizimler - Çilek Resmi Nasıl Çizilir?
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
+                                <p class="card-text2"> ÇİLEK TV <br> <span style="margin-top: 6px;">
                                         1,Mn watch ' 5 month ago
+                                    </span> </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a class="cards-content" href="" data-name="gym">
+
+                        <video src="images/gym/gym3.mp4"></video>
+                        <div class="card_body">
+                            <img id="card-img" src="images/gym/gymimg3.jpg" alt="">
+                            <div class="content-card">
+
+                                <p class="card_text">
+                                    🎶30 Min DIET DANCE WORKOUT🎶FAT BURNING CARDIO AEROBICS🎶
+
+                                </p>
+
+                                <p class="card-text2"> love SPOR<br> <span style="margin-top: 6px;">
+                                        4,Mn watch ' 9 month ago
                                     </span> </p>
 
                             </div>
@@ -733,17 +874,17 @@
 
                     <a class="cards-content" href="" data-name="foods">
 
-                        <video src="food10.mp4"></video>
+                        <video src="images/foods/food11.mp4"></video>
                         <div class="card_body">
-                            <img id="card-img" src="0.jpg" alt="">
+                            <img id="card-img" src="images/foods/foodimg10.jpg" alt="">
                             <div class="content-card">
 
                                 <p class="card_text">
-                                    ANİMAl
+                                    Would You Eat That? World's 10 Insane Foods
                                 </p>
 
-                                <p class="card-text2">dev-berkayy <br> <span style="margin-top: 6px;">
-                                        1,Mn watch ' 5 month ago
+                                <p class="card-text2">TOP 10 Earth <br> <span style="margin-top: 6px;">
+                                        91,Mn watch ' 7 month ago
                                     </span> </p>
 
                             </div>
@@ -751,6 +892,7 @@
                         </div>
 
                     </a>
+
 
                 </div>
 
