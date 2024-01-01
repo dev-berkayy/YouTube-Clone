@@ -170,11 +170,56 @@
             </div>
 
         </div>
-    </div>  
+    </div>
 
     </div>
 
-    <script src="index.js"></script>
+
+
+
+    <script>
+
+        (async () => {
+            try {
+                const response = await fetch("./data.json");
+                data = await response.json();
+            } catch (error) {
+                console.log(error);
+                data = [];
+            } finally {
+                main();
+            }
+        })();
+
+        function main() {
+            let row = document.querySelector(".row"); // Fix the selector
+            data.forEach(item => {
+                let card = document.createElement("a");
+                card.className = "cards-content";
+
+
+                card.innerHTML = `
+            <video src="${item.video}" loop muted></video>
+            <div class="card_body">
+                <img id="card-img" src="${item.channel.avatar}" alt="">
+                <div class="content-card">
+                    <p class="card_text">${item.title}</p>
+                    <p class="card-text2">${item.channel.name} <br> <span style="margin-top: 6px;">
+                        ${item.views} watch ' ${item.date}
+                    </span> </p>
+                </div>
+            </div>
+        `;
+
+                row.appendChild(card);
+            });
+
+            console.log(data);
+        }
+
+
+
+    </script>
 
 
 

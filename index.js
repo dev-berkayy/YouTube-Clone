@@ -1,24 +1,31 @@
 
+let data;
 
 
-let filterButtons = document.querySelectorAll(".filter_buttons button")
-let filterableCards = document.querySelectorAll(".filterable_cards a")
+(async () => {
+    try {
+        const response = await fetch("./data.json")
+        data = await response.json();
+    } catch (error) {
+        console.log(error)
+        data = []
 
-let a = document.querySelector("a")
+    } finally {
+        main()
+    }
+})()
 
-const filterCards = (e) => {
-    document.querySelector(".active").classList.remove("active")
-    e.target.classList.add("active")
 
-    filterableCards.forEach(a => {
-        a.classList.add("hide")
 
-        if (a.dataset.name === e.target.dataset.name || e.target.dataset.name === "all") {
-            a.classList.remove("hide")
-        }
-    })
+
+
+function main() {
+    let row = document.querySelector("row")
+    row.appendChild(data)
+    console.log(data)
 }
-filterButtons.forEach(button => button.addEventListener("click", filterCards))
+
+
 
 
 function openside() {
@@ -31,31 +38,9 @@ function openside() {
     let element2 = document.querySelectorAll(".left-btn")
     element2.forEach((e) => {
         e.classList.toggle("left-btn-new")
-
     })
 }
 
 
-
-function searchFunction() {
-    const input = document.querySelector("input").value.toUpperCase();
-
-    const cardcontainer = document.querySelector(".row");
-
-
-    const cards = cardcontainer.querySelectorAll(".cards-content");
-
-
-
-    for (let i = 0; i < cards.length; i++) {
-        let title = cards[i].querySelector(".content-card .card_text")
-        console.log(title)
-
-        if (title.innerText.toUpperCase().indexOf(input) > -1) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
-
-}
+// let params = new URLSearchParams(document.location.search);
+// params.get("videoId");
