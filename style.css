@@ -100,7 +100,7 @@ a {
     border: none;
     width: 39px;
     height: 39px;
-
+    cursor: pointer;
     border-radius: 50%;
     margin-left: -17px;
 }
@@ -112,10 +112,12 @@ a {
 }
 
 #sidebtn .bars {
+    cursor: pointer;
     font-size: 23px;
 }
 
 #logo {
+    cursor: pointer;
     display: flex;
     height: 30px;
     width: 160px;
@@ -213,6 +215,7 @@ i {
     height: 700px;
     top: 110px;
     margin-top: -70px;
+    cursor: pointer;
 }
 
 
@@ -227,11 +230,13 @@ i {
     transition: 0.3s;
     margin-top: -150px;
     z-index: 10;
+    cursor: pointer;
 }
 
 
 
 .left-btn {
+    cursor: pointer;
     font-size: 14px;
     margin-left: 45px;
     border: none;
@@ -268,6 +273,7 @@ i {
     padding-top: -20px;
     padding-right: 90px;
     margin-left: 55px;
+    cursor: pointer;
 }
 
 #kapsayici-left-btn {
@@ -327,6 +333,7 @@ h3::before {
     text-align: center;
     margin-left: 40px;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 .left-btns2-content:hover {
@@ -336,6 +343,7 @@ h3::before {
 .emoji {
     font-size: 21px;
     color: rgb(54, 54, 54);
+    cursor: pointer;
 }
 
 .left-btns3 {
@@ -349,6 +357,7 @@ h3::before {
     gap: 11px;
     justify-content: center;
     margin-top: 4px;
+    cursor: pointer;
 }
 
 .left-btn3 {
@@ -365,6 +374,7 @@ h3::before {
     border-radius: 5px;
     height: 35px;
     width: 200px;
+    cursor: pointer;
 }
 
 
@@ -376,6 +386,7 @@ h3::before {
 
 
 .left-btns3 h3::before {
+    cursor: pointer;
     content: "";
     position: absolute;
     width: 200px;
@@ -391,6 +402,7 @@ h3::before {
     width: 29px;
     height: 29px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .premium {
@@ -400,6 +412,7 @@ h3::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 .premium h3::before {
@@ -410,6 +423,7 @@ h3::before {
     font-size: 27px;
     color: rgb(22, 22, 22);
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -418,6 +432,7 @@ h3::before {
     color: red;
     background-color: white;
     font-size: 32px;
+    cursor: pointer;
 }
 
 
@@ -429,6 +444,7 @@ h3::before {
     justify-content: left;
     flex-direction: column;
     gap: 25px;
+    cursor: pointer;
 }
 
 .container {
@@ -466,6 +482,7 @@ a.hide {
 .cards-content {
     width: 19%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cards-content video {

@@ -1,20 +1,17 @@
 
 
-
-
 let data;
 
 (async () => {
     try {
         const response = await fetch("./data.json")
         data = await response.json();
+        await main()
+        await myfunction()
     } catch (error) {
         data = []
-    } finally {
-        main()
     }
 })()
-
 
 function main() {
     let row = document.querySelector(".row")
@@ -23,25 +20,35 @@ function main() {
         card.className = "cards-content";
 
         card.innerHTML = `
-<video id="videos" src = "${item.video}"></video>
+<video id="videos" src ="${item.video}"></video>
 <div class="card_body">
     <img id="card-img" src="${item.channel.avatar}" alt="">
     <div class="content-card">
         <p class="card_text">
         ${item.title}
         </p>
-
         <p class="card-text2">${item.channel.name} <br>  <span style="margin-top: 6px;">
         ${item.views} watch ' ${item.date}
             </span> </p>
-
     </div>
-
 </div>
 `
         row.appendChild(card)
-
     })
+}
+function myfunction() {
+    let videos = document.querySelectorAll("#videos");
+
+    videos.forEach(async (video) => {
+        await video.addEventListener("mouseenter", function () {
+            video.play();
+            console.log("a");
+        });
+        video.addEventListener("mouseout", function () {
+            video.pause();
+            video.currentTime = 0; // Reset the video to the beginning on mouse leave
+        });
+    });
 }
 
 function openside() {
@@ -56,8 +63,6 @@ function openside() {
         e.classList.toggle("left-btn-new")
     })
 }
-
-
 function searchFunction() {
     const input = document.querySelector("input").value.toUpperCase();
     const cardcontainer = document.querySelector(".row")
@@ -77,15 +82,3 @@ function searchFunction() {
 }
 
 
-let videos = document.querySelectorAll("#videos");
-
-videos.forEach((video) => {
-    video.addEventListener("mouseover", function () {
-        video.play();
-    });
-
-    video.addEventListener("mouseleave", function () {
-        video.pause();
-        video.currentTime = 0; // Reset the video to the beginning on mouse leave
-    });
-});

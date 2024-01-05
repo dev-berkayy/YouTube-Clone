@@ -136,7 +136,9 @@
 
         <div class="container">
             <div class="videocard">
-                <div class="video"></div>
+                <div class="video">
+                    <video class="video2" src="images/animals/animal2.mp4" loop></video>
+                </div>
                 <div class="video-title">
                     <h2>Create A YOU TUBE CLONE Effects Using HTML CSS And Javascript</h2>
                 </div>
@@ -329,7 +331,17 @@
 
             </div>
 
-            <div class="videoright"></div>
+            <div class="main2">
+                <div class="buttons-main">
+                    <button style="width: 60px; ">ALL</button>
+                    <button style="width: 140px;">JAVASCRİPT</button>
+                    <button style="width: 110px;">REACT</button>
+
+                </div>
+
+
+
+            </div>
 
         </div>
     </div>
@@ -337,7 +349,24 @@
 
     </div>
 
-    <script src="index.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.querySelector(".video2");
+
+            // Play video on mouseenter
+            video.addEventListener("mouseenter", function () {
+                video.play();
+            });
+
+            // Pause video on mouseleave
+            video.addEventListener("mouseleave", function () {
+                video.pause();
+            });
+        });
+    </script>
+
 
 
 
