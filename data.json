@@ -1,6 +1,7 @@
 [
-    {   
-        
+    {
+        "id": 1,
+        "category": "food",
         "video": "images/gym/gym2.mp4",
         "title": "YOU CAN DO IT - GYM MOTIVATION 🏆",
         "views": "1.6m",
@@ -11,6 +12,8 @@
         }
     },
     {
+        "id": 2,
+        "category": "food",
         "video": "images/gym/gym3.mp4",
         "title": "Aggressive Rap Gym Workout Mix 2023 💪 Best Hip Hop Workout Music Mix 2023 ft Eminem, 2Pac, DMX",
         "views": "6.2m",
@@ -21,6 +24,8 @@
         }
     },
     {
+        "id": 3,
+        "category": "food",
         "video": "images/gym/gym4.mp4",
         "title": " GYM HARDSTYLE - Middle of the Night Dom Livez Hardstyle Remix (4K)",
         "views": "11.2m",
@@ -31,6 +36,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/gym/gym5.mp4",
         "title": " 🎶30 Min DIET DANCE WORKOUT CARDIO🎶NO JUMPING🎶LISS CARDIO WORKOUT🎶",
         "views": "3.2m",
@@ -41,6 +47,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/gym/gym6.mp4",
         "title": "Best Workout Music 2023 🔥 Gym Motivation Music Mix 2023",
         "views": "1.2m",
@@ -51,6 +58,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/gym/gym7.mp4",
         "title": " CRAZY CLEANER surprise GIRLS in a GYM prank | Aesthetics in public reactions",
         "views": "1.2m",
@@ -61,6 +69,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/gym/gym8.mp4",
         "title": "Best Workout Music 🔥 Best Gym Music 🔥 Best Trainings Music 2023",
         "views": "1.2m",
@@ -71,6 +80,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/gym/gym9.mp4",
         "title": "Elite PowerLifter Pretends To Be A CLEANER | Anatoly Gym Prank",
         "views": "1.2m",
@@ -81,6 +91,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food1.mp4",
         "title": "Juicy Burger with a Huge Cutlet! Fast food in the Village Is Only Like This",
         "views": "1.2m",
@@ -91,6 +102,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food2.mp4",
         "title": "Tostçu Mahmut'ta Ütü Tost Nasıl Yapılır | Tostçu Mahmut Gaziantep",
         "views": "1.2m",
@@ -101,6 +113,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food3.mp4",
         "title": "Food And Beverage Department: Hotel Management",
         "views": "1.2m",
@@ -111,6 +124,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food4.mp4",
         "title": "Classification of Beverages: Alcoholic and Non alcoholic beverages/ ",
         "views": "1.2m",
@@ -121,6 +135,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food5.mp4",
         "title": "Top 10 Food & Beverage Trends for 2022",
         "views": "1.2m",
@@ -131,6 +146,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food6.mp4",
         "title": "This is the future | Top 10 Popular Food Trends You Need to Try in 2023 and 2024",
         "views": "1.2m",
@@ -141,6 +157,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food7.mp4",
         "title": "The Best Food Recipe Idea of the Day | The 10 Most Popular Real Simple Recipes of",
         "views": "1.2m",
@@ -151,6 +168,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food8.mp4",
         "title": "What Are The Top 5 Consumed Beverages?! #shorts #drinks #guessinggame",
         "views": "1.2m",
@@ -161,6 +179,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food8.mp4",
         "title": "Top 7 Foods that Unclog Arteries Naturally and Prevent Heart Attack",
         "views": "1.2m",
@@ -171,6 +190,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food10.mp4",
         "title": "Japanese Food - GIANT BEAR PAW Tokyo Japan",
         "views": "1.2m",
@@ -181,6 +201,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food11.mp4",
         "title": "Future of Food: What trends are shaping the food and beverage industry?",
         "views": "1.2m",
@@ -191,6 +212,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/foods/food14.mp4",
         "title": "Food and drink vocabulary in English - Learn English vocabulary by topic - Food in",
         "views": "1.2m",
@@ -201,6 +223,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/cars/car1.mp4",
         "title": "992 GT3RS | Seattle's First [4K]",
         "views": "1.2m",
@@ -211,6 +234,7 @@
         }
     },
     {
+        "category": "food",
         "video": "images/cars/car2.mp4",
         "title": "Don Omar - Danza Kuduro [REMIX] | CAR VIDEO",
         "views": "1.2m",
@@ -221,6 +245,7 @@
         }
     },
     {
+        "category": "cars",
         "video": "images/cars/car3.mp4",
         "title": "EDM Gaming Music 2023 🔥✨ The Best New Popular Music",
         "views": "1.2m",
@@ -231,6 +256,7 @@
         }
     },
     {
+        "category": "cars",
         "video": "images/cars/car4.mp4",
         "title": "🔈BASS BOOSTED🔈 CAR  V8 800HP  MIX 2018 🔥 BEST",
         "views": "1.2m",
@@ -241,6 +267,7 @@
         }
     },
     {
+        "category": "cars",
         "video": "images/cars/car5.mp4",
         "title": "1200HP C63 AMG by GAD Motors | 0-309km/h ONBOARD & 1/2 MILE by AutoTopNL",
         "views": "1.2m",
@@ -251,6 +278,7 @@
         }
     },
     {
+        "category": "cars",
         "video": "images/cars/car6.mp4",
         "title": "950 HP Mercedes-AMG CLS63 vs 750 HP Audi RS6",
         "views": "1.2m",

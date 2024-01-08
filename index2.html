@@ -137,7 +137,7 @@
         <div class="container">
             <div class="videocard">
                 <div class="video">
-                    <video class="video2" src="images/animals/animal2.mp4" loop></video>
+                    <video class="video2" src="images/animals/animal1.mp4" loop></video>
                 </div>
                 <div class="video-title">
                     <h2>Create A YOU TUBE CLONE Effects Using HTML CSS And Javascript</h2>
@@ -354,17 +354,17 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let video = document.querySelector(".video2");
+            console.log(video);
 
-            // Play video on mouseenter
             video.addEventListener("mouseenter", function () {
                 video.play();
             });
 
-            // Pause video on mouseleave
             video.addEventListener("mouseleave", function () {
                 video.pause();
             });
         });
+
     </script>
 
 

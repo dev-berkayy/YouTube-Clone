@@ -1,22 +1,24 @@
 
-
 let data;
-
+const filterbuttons = document.querySelectorAll(".filter_buttons button")
+const cardcontainer = document.querySelector(".row");
 (async () => {
     try {
         const response = await fetch("./data.json")
         data = await response.json();
-        await main()
-        await myfunction()
+        main(data)
+        myfunction()
     } catch (error) {
         data = []
     }
 })()
 
-function main() {
-    let row = document.querySelector(".row")
-    data.forEach(item => {
+function main(items) {
+    cardcontainer.innerHTML = ""
+
+    items.forEach(item => {
         let card = document.createElement("a")
+        card.setAttribute("href", `index2.html?videoid=${item.id}`)
         card.className = "cards-content";
 
         card.innerHTML = `
@@ -33,14 +35,14 @@ function main() {
     </div>
 </div>
 `
-        row.appendChild(card)
+        cardcontainer.appendChild(card)
     })
 }
 function myfunction() {
     let videos = document.querySelectorAll("#videos");
 
     videos.forEach(async (video) => {
-        await video.addEventListener("mouseenter", function () {
+        video.addEventListener("mouseenter", function () {
             video.play();
             console.log("a");
         });
@@ -63,22 +65,32 @@ function openside() {
         e.classList.toggle("left-btn-new")
     })
 }
+
+
 function searchFunction() {
     const input = document.querySelector("input").value.toUpperCase();
-    const cardcontainer = document.querySelector(".row")
-    const cards = cardcontainer.getElementsByClassName("cards-content")
-
-
-    for (i = 0; i < cards.length; i++) {
-        let title = cards[i].querySelector(".card_text")
-
-
-        if (title.innerText.toUpperCase().indexOf(input) > -1) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
+    filter(input, "title")
 }
+
+filterbuttons.forEach(el => {
+    el.addEventListener("click", () => {
+        let category = el.getAttribute("data-category")
+        if (category === "all") {
+            main(data);
+        } else {
+            filter(category, "category")
+        }
+
+    })
+})
+
+
+function filter(text, field) {
+    const filterdata = data.filter(item => {
+        return item[field].includes(text)
+    })
+    main(filterdata)
+}
+
 
 
