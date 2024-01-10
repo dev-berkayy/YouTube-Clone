@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            color: white;
+            background-color: #0f0f0f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="filter_buttons">
+        <button class="active" data-category="all"> ALL</button>
+        <button>FOODS</button>
+        <button>ANIMALS</button>
+        <button>CARS</button>
+        <button>GYM</button>
+        <button>BIRDS</button>
+        <button>NOT WORKING</button>
+    </div>
+
+    <script>
+        // Get all buttons with the class "filter_buttons"
+        const filterButtons = document.querySelectorAll('.filter_buttons button');
+
+        // Add click event listener to each button
+        filterButtons.forEach(el => {
+            el.addEventListener("click", function () {
+                // Remove "active" class from all buttons
+                filterButtons.forEach(nav => nav.classList.remove("active"))
+                // Add "active" class to the clicked button
+                this.classList.add("active");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

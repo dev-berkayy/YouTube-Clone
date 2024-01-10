@@ -84,6 +84,13 @@ filterbuttons.forEach(el => {
     })
 })
 
+filterbuttons.forEach(el => {
+    el.addEventListener("click", function () {
+        filterbuttons.forEach(el2 => el2.classList.remove("active"))
+        this.classList.add("active");
+    })
+})
+
 
 function filter(text, field) {
     const filterdata = data.filter(item => {

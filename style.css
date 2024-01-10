@@ -151,6 +151,32 @@ a {
     margin-right: 40px;
 }
 
+.rigth-nav img {
+    margin-top: 14px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+
+}
+
+
+.rigth-nav .bell::after {
+    content: "4";
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    margin-left: 13px;
+    margin-top: 3px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+
 
 .rigth-nav .bell {
     font-size: 30px;
@@ -233,11 +259,15 @@ i {
     cursor: pointer;
 }
 
+.active7 {
+    background-color: black;
+    color: white;
+}
 
 
 .left-btn {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 45px;
     border: none;
     display: flex;
@@ -252,6 +282,8 @@ i {
     border-radius: 10px;
     margin-top: -10px;
     z-index: 10;
+    width: 55px;
+    height: 60px;
 }
 
 .margin {
