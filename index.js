@@ -7,7 +7,7 @@ const cardcontainer = document.querySelector(".row");
         const response = await fetch("./data.json")
         data = await response.json();
         main(data)
-        myfunction()
+        mousefunction()
     } catch (error) {
         data = []
     }
@@ -38,7 +38,7 @@ function main(items) {
         cardcontainer.appendChild(card)
     })
 }
-function myfunction() {
+function mousefunction() {
     let videos = document.querySelectorAll("#videos");
 
     videos.forEach(async (video) => {
