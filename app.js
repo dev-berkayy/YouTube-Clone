@@ -10,24 +10,6 @@ function openside() {
         e.classList.toggle("left-btn-new")
     })
 }
-function searchFunction() {
-    const input = document.querySelector("input").value.toUpperCase();
-    const cardcontainer = document.querySelector(".row")
-    const cards = cardcontainer.getElementsByClassName("cards-content")
-
-
-    for (i = 0; i < cards.length; i++) {
-        let title = cards[i].querySelector(".card_text")
-
-
-        if (title.innerText.toUpperCase().indexOf(input) > -1) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
-}
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,3 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
+// burdan sonrarsıına  bakılacak
+
+
+
+
+

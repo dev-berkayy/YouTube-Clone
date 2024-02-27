@@ -559,12 +559,10 @@ a.hide {
 }
 
 
-
 @media screen and (max-width:1500px) {
     .cards-content {
         width: 31%;
     }
-
 
 
 }
@@ -740,4 +738,76 @@ a.hide {
     .left-btns {
         margin-top: -210px;
     }
+}
+
+@media screen and (max-width:750px) {
+
+
+    input {
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px;
+        height: 37px;
+
+    }
+
+    #search {
+        display: none;
+    }
+
+    #mic {
+        margin-top: 17px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .rigth-nav .bell {
+        font-size: 23px;
+        margin-left: 11px;
+        margin-bottom: -5px;
+    }
+
+    .rigth-nav .gift {
+        font-size: 23px;
+        margin-top: 14px;
+    }
+
+
+
+
+    .left-btns {
+        margin-top: -220px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #mic {
+        margin-top: 13px;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    input {
+        width: 40px;
+        font-size: 10px;
+        padding-left: -10px;
+        height: 30px;
+
+    }
+
+
+
+
+    .rigth-nav .bell {
+
+        font-size: 19px;
+        margin-left: 11px;
+    }
+
+    .rigth-nav .gift {
+
+        font-size: 19px;
+    }
+
+
 }

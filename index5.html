@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+
+    <title>YOU_TUBE CLON</title>
+</head>
+
+<body>
+
+    <div class="nav">
+
+
+        <div class="left-nav">
+
+            <div class="nav-content">
+                <button id="sidebtn" onclick="openside()"><i class="fa-solid fa-bars bars"></i></button>
+                <a href="index.html" id="logo"><i class="fa-brands fa-youtube"></i> <span
+                        style="color: black; font-weight: bold; letter-spacing: -2px; word-spacing: -4px; margin-top: 4px; font-size: 24px;">You
+                        Tube </span> <span style="color: black; font-size: 11px; font-weight: 600;">TR</span></a>
+            </div>
+
+            <div class="mid-nav">
+                <input type="text" placeholder="SEARCH" onkeyup="searchFunction()">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                <button id="mic"><i class="fa-solid fa-microphone"></i></button>
+            </div>
+
+
+
+
+            <div class="rigth-nav">
+                <a href="#"><i class="fa-regular fa-bell bell"></i> </a>
+                <a href="#"> <i class="fa-solid fa-gift gift"></i></a>
+                <a href="#"></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="main">
+        <div class="left-btns">
+            <div id="kapsayici-left-btn">
+                <button class="left-btn"><i class="fa-solid fa-house"></i> HOME </button>
+                <button class="left-btn"><i class="fa-brands fa-openid"></i> HOME</button>
+                <button class="left-btn"><i class="fa-regular fa-star"></i> HOME</button>
+                <button class="left-btn"><i class="fa-solid fa-pager"></i> HOME</button>
+            </div>
+
+
+            <div class="left-btns2">
+                <h3>YOU <i class="fa-solid fa-arrow-right arr"></i></h3>
+                <a class="left-btns2-content" href=""> <i class="fa-regular fa-user emoji"></i> <span
+                        style="color: black;">Personal</span> </a>
+                <a class="left-btns2-content" href=""><i class="fa-solid fa-arrow-rotate-left emoji"></i><span
+                        style="color: black;">Past</span></i></a>
+                <a class="left-btns2-content" href=""><i class="fa-solid fa-play emoji"></i> <span
+                        style="color: black;">Videos
+                    </span> </a>
+                <a class="left-btns2-content" href=""> <i class="fa-solid fa-clock-rotate-left emoji"></i> <span
+                        style="color: black;">Watch Later</span> </a>
+                <a class="left-btns2-content" href=""><i class="fa-regular fa-thumbs-up emoji"></i> <span
+                        style="color: black;">Liked Videos
+                    </span> </i></a>
+            </div>
+
+
+            <div class="left-btns3">
+                <h3 style="margin-top: -20px; margin-left: 45px; color: #353535;">SUBSCRİBE</h3>
+
+                <a class="left-btn3" href=""> <img src="images/gym/gymimg.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">WWE <span
+                            style="margin-left: 85px; color: rgb(233, 0, 0);"><i style="font-size: 15px;"
+                                class="fa-regular fa-star"></i></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg1.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">DutchMotors <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 34px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/animals/animalsimg4.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">Lions <span><span style=" color: rgb(255, 0, 0);"><i
+                                    style="font-size: 15px; padding-left: 82px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg4.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">lamborghini <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 40px;"
+                                    class="fa-regular fa-star"></i></span></span></h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg2.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">TİTAN X<span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 69px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+
+                <a class="left-btn3" href=""> <img src="images/foods/foodimg2.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">Beverages TV<span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 31px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+                <a class="left-btn3" href=""> <img src="images/cars/carimg6.jpg" alt="">
+                    <h4 style="margin-top: 7px; margin-left: 10px;">V8 ENGİNE <span><span
+                                style=" color: rgb(255, 0, 0);"><i style="font-size: 15px; padding-left: 45px;"
+                                    class="fa-regular fa-star"></i></span></span> </h4>
+                </a>
+
+                <div class="premium">
+                    <h3 style="margin-top: -20px; margin-left: 10px; color: #353535;"></h3>
+                    <!-- <div>
+                        <a href="" class="premium-a"><i class="fa-brands fa-youtube tub"></i>SETTİNG</a>
+                    </div> -->
+
+                    <a href="" class="premium-a"><i class="fa-brands fa-youtube tub"></i>PREMİUM</a>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="container">
+            <div class="videocard">
+                <div class="video">
+                    <video class="video2" src="images/animals/animal1.mp4" loop></video>
+                </div>
+                <div class="video-title">
+                    <h2>Create A YOU TUBE CLONE Effects Using HTML CSS And Javascript</h2>
+                </div>
+                <div class="videobuttons">
+                    <div class="video-img">
+                        <div class="video-content"> <img src="images/0.jpg" alt="">
+                            <p class="img-content"> DEV Berkay <br> <span style="color: #262626;">10 B Subsbcribe</span>
+                            </p>
+                            <div class="subscribebtn">
+                                <i class="fa-regular fa-bell bell2"></i>
+                                <h2 style="margin-top: -0px; font-size: 18px; margin-left: 14px; color: #464646;">
+                                    Subscribed </h2>
+                            </div>
+                        </div>
+
+                        <div class="videobtnsrigth">
+                            <button> <i class="fa-regular fa-thumbs-up"></i> <span
+                                    style="margin-left: 5px; font-size: 18px;">381</span></button>
+                            <button> <i class="fa-solid fa-share"></i> <span
+                                    style="font-size: 18px; margin-left: 3px;">Share</span>
+                            </button>
+                            <button> <i class="fa-solid fa-dollar-sign"></i><span
+                                    style="font-size: 18px; margin-left: 3px;">Thanks</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="videodocument">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure cum nam nesciunt
+                            sit? Reiciendis quis ad vero explicabo. Mollitia, officia illum exercitationem possimus
+                            Reiciendis quis ad vero explicabo. Mollitia, officia illum exercitationem possimus
+                            Mollitia, officia illum exercitationem possimus
+                            Reiciendis quis ad vero explicabo. Mollitia, officia illum exercitationem possimusm dolor
+                            sit amet consectetur adipisicing elit. Voluptatibus iure cum nam nesciunt
+                            delectus nemo tempore commodi magni fuga.</p>
+                    </div>
+                </div>
+
+                <div class="video-comments">
+                    <div style="display: flex; gap: 40px; margin-top: 5px;">
+                        <h2 style="margin-left: 20px; font-weight: bolder; color: #1a1a1a;"> 6 Comments</h2>
+                        <h2 style="color: #1a1a1a;"><i style="color: #1a1a1a;" class="fa-solid fa-sliders"></i> Ölçüt
+                        </h2>
+                    </div>
+
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="video-comments">
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="document-video">
+                        <div><img src="images/0.jpg" alt=""></div>
+
+                        <div class="content2">
+                            <p>
+                            <p class="dev">@dev-berkayy</p>
+                            <spans style="margin-top: 2px; margin-left: 10px; color: rgb(22, 22, 22);">
+                                1 month ago
+                                </span> </p>
+                                <p class="comments">Lorem ipsum dolor sit ame
+                                    harum, unde veniam
+                                    quam omnis, deleniti alias ea maxime quos dolor enim mo
+                                    tenetur libero minus suscipit dolore repudiandae.</p>
+
+                                <div class="likesbutton">
+                                    <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <button class="like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="main2">
+                <div class="buttons-main">
+                    <button class="active" data-all="all"> ALL</button>
+                    <button data-food="foods">FOODS</button>
+                    <button data-animals="animals">ANİMALS</button>
+                </div>
+
+                <div class="mainvideos">
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/foods/food1.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/foods/food2.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/foods/food3.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/animals/animal1.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/animals/animal2.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/animals/animal5.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+                    <div class="mainvideo" data-animals="animals">
+                        <div class="videobox"><video src="images/animals/animal6.mp4"></video></div>
+                        <div class="videoboxdocumnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                            maxime?</div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.querySelector(".video2");
+            console.log(video);
+
+            video.addEventListener("mouseenter", function () {
+                video.play();
+            });
+
+            video.addEventListener("mouseleave", function () {
+                video.pause();
+            });
+        });
+
+    </script>
+
+    <script src="index.js"></script>
+
+
+
+
+
+</body>
+
+</html>

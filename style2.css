@@ -175,7 +175,7 @@ i {
     transition: 0.3s;
     background-color: #ffffff;
     position: fixed;
-    height: 700px;
+    height: auto;
     top: 110px;
     margin-top: -10px;
     z-index: 10;
@@ -184,7 +184,7 @@ i {
 
 .left-btns {
     position: sticky;
-    height: 10%;
+    height: 20%;
     top: 110px;
     display: flex;
     flex-direction: column;
@@ -242,8 +242,9 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -20px;
-
+    position: sticky;
+    top: 100px;
+    left: 0;
 }
 
 
@@ -439,6 +440,7 @@ a.hide {
     width: 100%;
     height: 100%;
     cursor: pointer;
+
 }
 
 h2 {
@@ -459,18 +461,27 @@ h2 {
     gap: 10px;
     margin-right: 20px;
     margin-top: 3px;
+
 }
 
 .video-content {
     display: flex;
     justify-content: space-between;
+
 }
 
 .videobtnsrigth button {
-    width: 120px;
+    width: auto;
     height: 35px;
     border-radius: 15px;
     border: none;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.active {
+    color: white;
+    background-color: #0f0f0f;
 }
 
 .video-img img {
@@ -512,6 +523,7 @@ h2 {
     background-color: rgb(217, 217, 217);
     width: 97%;
     margin-top: 20px;
+
 
 }
 
@@ -570,6 +582,7 @@ h2 {
     margin-left: -130px;
     width: 90px;
     background-color: white;
+
 }
 
 .like {
@@ -597,14 +610,56 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    margin-left: -40px;
+
 }
 
 .buttons-main button {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
     border: none;
     height: 30px;
     font-size: 17px;
     border-radius: 5px;
 }
+
+.mainvideos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.mainvideo {}
+
+.videobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.videobox video {
+    border-radius: 15px;
+    min-width: 340px;
+    height: 200px;
+}
+
+
+
+.videoboxdocumnet {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
 
 
 
@@ -617,107 +672,32 @@ h2 {
     margin-top: -160px;
 }
 
-@media screen and (max-width:1500px) {}
-
-@media screen and (max-width:1050px) {}
-
-
-@media screen and (max-width:850px) {
-
-    #mic {
-        margin-top: 13px;
-        width: 35px;
-        height: 35px;
+@media screen and (max-width:1300px) {
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 
-
-
-    .rigth-nav .bell {
-        font-size: 23px;
-        margin-left: 11px;
-        margin-bottom: -5px;
+    .videocard {
+        width: 100%;
     }
 
-    .rigth-nav .gift {
-        font-size: 23px;
-        margin-top: 13px;
+    .main2 {
+        width: 100%;
+        margin-top: auto;
+        margin-top: 360px;
+        height: auto;
     }
 
-
-
-
-}
-
-
-
-@media screen and (max-width:750px) {
-
-
-    input {
-        border-top-right-radius: 17px;
-        border-bottom-right-radius: 17px;
-        height: 37px;
-
+    .mainvideos {
+        display: flex;
+        width: 114%;
+        height: auto;
+        margin-left: -154px;
     }
 
-    #search {
-        display: none;
+    .mainvideo {
+        width: 40%;
+        border-radius: 75px;
     }
-
-    #mic {
-        margin-top: 17px;
-        width: 25px;
-        height: 25px;
-    }
-
-    .rigth-nav .bell {
-        font-size: 23px;
-        margin-left: 11px;
-        margin-bottom: -5px;
-    }
-
-    .rigth-nav .gift {
-        font-size: 23px;
-        margin-top: 14px;
-    }
-
-
-
-
-    .left-btns {
-        margin-top: -220px;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    #mic {
-        margin-top: 13px;
-        width: 25px;
-        height: 25px;
-    }
-
-
-    input {
-        width: 40px;
-        font-size: 10px;
-        padding-left: -10px;
-        height: 30px;
-
-    }
-
-
-
-
-    .rigth-nav .bell {
-
-        font-size: 19px;
-        margin-left: 11px;
-    }
-
-    .rigth-nav .gift {
-
-        font-size: 19px;
-    }
-
-
 }
