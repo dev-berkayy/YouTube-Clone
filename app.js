@@ -9,7 +9,7 @@ function openside() {
     element2.forEach((e) => {
         e.classList.toggle("left-btn-new")
     })
-}
+} 
 
 
 document.addEventListener("DOMContentLoaded", function () {
