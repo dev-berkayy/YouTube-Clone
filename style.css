@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     position: sticky;
+    z-index: 99;
     top: 0;
     height: 150px;
     background-color: white;
@@ -25,8 +26,7 @@ nav-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    background-color: white;
+    position: fixed;
     height: 100px;
     top: 0;
 }
@@ -41,12 +41,11 @@ nav-content {
     margin-bottom: 20px;
     height: auto;
     width: auto;
-    background-color: #ffffff;
-
 }
 
 .filter_buttons button {
     border: none;
+    cursor: pointer;
     width: 85px;
     height: 32px;
     border-radius: 5px;
@@ -54,6 +53,7 @@ nav-content {
     transition: 0.4s;
     font-weight: bold;
     color: rgb(82, 82, 82);
+
 }
 
 .filter_buttons button:hover {
@@ -232,13 +232,12 @@ i {
 
 }
 
-
 .left-btns.activex {
     width: 180px;
     transition: 0.3s;
     background-color: #ffffff;
     position: sticky;
-    height: 700px;
+    height: 30vh;
     top: 110px;
     margin-top: -70px;
     cursor: pointer;
@@ -255,7 +254,8 @@ i {
     align-items: center;
     transition: 0.3s;
     margin-top: -150px;
-    z-index: 10;
+    z-index: 99;
+
     cursor: pointer;
 }
 
@@ -287,7 +287,6 @@ i {
 }
 
 .margin {
-
     margin-left: 400px;
 }
 
