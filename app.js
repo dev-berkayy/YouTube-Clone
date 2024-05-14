@@ -5,11 +5,11 @@ function openside() {
     btn2.classList.toggle("activex4")
     btn.classList.toggle("activex3")
     element.classList.toggle("activex")
-    let element2 = document.querySelectorAll(".left-btn")
+    let element2 =  document.querySelectorAll(".left-btn")
     element2.forEach((e) => {
         e.classList.toggle("left-btn-new")
     })
-}
+} 
 
 
 document.addEventListener("DOMContentLoaded", function () {
